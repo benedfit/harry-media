@@ -1,17 +1,17 @@
 {
-  "name": "@newhighsco/template",
-  "description": "TODO:",
+  "name": "harry-media",
+  "description": "Harry's media website",
   "version": "1.0.0",
   "author": "New High Score",
   "license": "ISC",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/newhighsco/TODO:.git"
+    "url": "https://github.com/benedfit/harry-media.git"
   },
-  "homepage": "https://github.com/newhighsco/TODO:#readme",
+  "homepage": "https://github.com/benedfit/harry-media#readme",
   "bugs": {
-    "url": "https://github.com/newhighsco/TODO:/issues"
+    "url": "https://github.com/benedfit/harry-media/issues"
   },
   "packageManager": "yarn@4.18.0",
   "files": [
