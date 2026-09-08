@@ -1,0 +1,18 @@
+@use '~styles/colors.module';
+@use '~styles/functions';
+
+.root {
+  border-top: 1px solid colors.$grey;
+}
+
+.link {
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.icon {
+  width: functions.spacing(4);
+}
