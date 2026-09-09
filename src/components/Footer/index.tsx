@@ -1,4 +1,5 @@
 import {
+  ContentContainer,
   FooterContainer,
   Grid,
   Icon,
@@ -20,38 +21,48 @@ const iconLinks = {
 
 const Footer: FC = () => (
   <FooterContainer gutter theme={{ root: styles.root }}>
-    <Grid valign="middle">
-      <Grid.Item sizes={['one-half']}>
-        <Navigation links={footer.links} theme={{ link: styles.link }} inline />
-      </Grid.Item>
-      <Grid.Item sizes={['one-half']} align="right">
-        <Navigation
-          links={Object.values(iconLinks)}
-          renderLink={(
-            { href, icon, verb = 'Follow', preposition = 'on', ...rest },
-            index
-          ) => {
-            const key = Object.keys(iconLinks).at(index)
+    <ContentContainer
+      gutter
+      size="desktopLarge"
+      theme={{ content: styles.content }}
+    >
+      <Grid valign="middle">
+        <Grid.Item sizes={['one-half']}>
+          <Navigation
+            links={footer.links}
+            theme={{ link: styles.link }}
+            inline
+          />
+        </Grid.Item>
+        <Grid.Item sizes={['one-half']} align="right">
+          <Navigation
+            links={Object.values(iconLinks)}
+            renderLink={(
+              { href, icon, verb = 'Follow', preposition = 'on', ...rest },
+              index
+            ) => {
+              const key = Object.keys(iconLinks).at(index)
 
-            return (
-              <SmartLink
-                href={href ?? socialLinks[key]}
-                target="_blank"
-                {...rest}
-              >
-                <Icon
-                  name={icon}
-                  theme={{ root: styles.icon }}
-                  alt={[verb, name, preposition, key].join(' ')}
-                />
-              </SmartLink>
-            )
-          }}
-          theme={{ link: styles.iconLink }}
-          inline
-        />
-      </Grid.Item>
-    </Grid>
+              return (
+                <SmartLink
+                  href={href ?? socialLinks[key]}
+                  target="_blank"
+                  {...rest}
+                >
+                  <Icon
+                    name={icon}
+                    theme={{ root: styles.icon }}
+                    alt={[verb, name, preposition, key].join(' ')}
+                  />
+                </SmartLink>
+              )
+            }}
+            theme={{ link: styles.iconLink }}
+            inline
+          />
+        </Grid.Item>
+      </Grid>
+    </ContentContainer>
   </FooterContainer>
 )
 

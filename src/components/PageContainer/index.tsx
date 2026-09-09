@@ -9,7 +9,7 @@ import Header from '~components/Header'
 type Props = PropsWithChildren<{ meta: NextSeoProps }>
 
 const PageContainer: FC<Props> = ({ meta, children }) => (
-  <ThemedPageContainer header={<Header />} footer={<Footer />} gutter>
+  <ThemedPageContainer header={<Header />} footer={<Footer />}>
     <Meta {...meta} />
     {children}
   </ThemedPageContainer>

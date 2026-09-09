@@ -1,8 +1,14 @@
 @use '~styles/colors.module';
+@use '~styles/functions';
 
 .root {
   background: colors.$fir;
   position: sticky;
+  top: 0;
+}
+
+.content {
+  padding-block: functions.spacing(2);
 }
 
 .logo {
