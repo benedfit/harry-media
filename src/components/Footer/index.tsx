@@ -28,13 +28,17 @@ const Footer: FC = () => (
         <Navigation
           links={Object.values(iconLinks)}
           renderLink={(
-            { href, icon, verb = 'Follow', preposition = 'on' },
+            { href, icon, verb = 'Follow', preposition = 'on', ...rest },
             index
           ) => {
             const key = Object.keys(iconLinks).at(index)
 
             return (
-              <SmartLink href={href ?? socialLinks[key]} target="_blank">
+              <SmartLink
+                href={href ?? socialLinks[key]}
+                target="_blank"
+                {...rest}
+              >
                 <Icon
                   name={icon}
                   theme={{ root: styles.icon }}
@@ -43,6 +47,7 @@ const Footer: FC = () => (
               </SmartLink>
             )
           }}
+          theme={{ link: styles.iconLink }}
           inline
         />
       </Grid.Item>

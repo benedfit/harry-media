@@ -9,10 +9,18 @@
   &:hover,
   &:active,
   &:focus {
-    text-decoration: underline;
+    text-decoration: underline colors.$gold;
   }
 }
 
 .icon {
   width: functions.spacing(4);
+}
+
+.iconLink {
+  &:hover,
+  &:active,
+  &:focus {
+    color: colors.$gold;
+  }
 }
