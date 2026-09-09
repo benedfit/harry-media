@@ -1,1 +1,8 @@
-{ "links": [{ "href": "/", "children": "Home", "target": "" }] }
+{
+  "links": [
+    { "href": "/", "children": "Home" },
+    { "href": "/#career", "children": "Career" },
+    { "href": "/#charity", "children": "Charity" },
+    { "href": "/#partners", "children": "Partners" }
+  ]
+}

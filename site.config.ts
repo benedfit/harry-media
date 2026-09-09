@@ -5,18 +5,15 @@ import colors from '~styles/colors.module.scss'
 
 const config = {
   url: process.env.NEXT_PUBLIC_SITE_URL,
-  name: 'Press Start',
+  name: 'Tristan Price',
   shortName: null,
-  title: 'Press Start - Chipset + Next.js site starter by New High Score',
-  description: 'Get a theme-able Next.js site up and running quickly',
+  title: 'Offical website of Tristan Price',
+  description: 'TODO:',
   logo: { bitmap: logoBitmap.src, vector: logoVector },
   openGraphImage: openGraphImage.src,
   themeColor: colors.black,
-  twitterHandle: 'newhighsco',
-  socialLinks: {
-    GithHub: 'https://github.com/newhighsco/press-start',
-    X: 'https://x.com/newhighsco'
-  }
+  twitterHandle: 'TODO:',
+  socialLinks: { Instagram: '#', X: '#' }
 }
 
 export default config

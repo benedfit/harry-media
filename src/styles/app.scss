@@ -4,9 +4,13 @@
 @use '~styles/font-faces.module';
 @use '~styles/fonts.module';
 
+:root {
+  color-scheme: only dark;
+}
+
 body {
-  background-color: colors.$white;
-  color: colors.$black;
+  background-color: colors.$black;
+  color: colors.$white;
   font-size: 18px;
   line-height: 1.5;
   font-family: fonts.$body;

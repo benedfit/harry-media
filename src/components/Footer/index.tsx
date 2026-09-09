@@ -13,13 +13,16 @@ import footer from '~data/footer.json'
 import styles from './Footer.module.scss'
 
 const { name, socialLinks } = config
-const iconLinks = { GitHub: { icon: 'simple-icons:github', verb: 'View' } }
+const iconLinks = {
+  Instagram: { icon: 'simple-icons:instagram' },
+  X: { icon: 'simple-icons:x' }
+}
 
 const Footer: FC = () => (
   <FooterContainer gutter theme={{ root: styles.root }}>
     <Grid valign="middle">
       <Grid.Item sizes={['one-half']}>
-        <Navigation links={footer.links} theme={{ link: styles.link }} />
+        <Navigation links={footer.links} theme={{ link: styles.link }} inline />
       </Grid.Item>
       <Grid.Item sizes={['one-half']} align="right">
         <Navigation
@@ -40,6 +43,7 @@ const Footer: FC = () => (
               </SmartLink>
             )
           }}
+          inline
         />
       </Grid.Item>
     </Grid>

@@ -1,7 +1,8 @@
 @use '~styles/colors.module';
 
 .root {
-  border-bottom: 1px solid colors.$grey;
+  background: colors.$fir;
+  position: sticky;
 }
 
 .logo {
@@ -15,9 +16,12 @@
 }
 
 .link {
+  text-transform: uppercase;
+
   &:hover,
   &:active,
+  &.active,
   &:focus {
-    text-decoration: underline;
+    text-decoration: underline colors.$gold;
   }
 }

@@ -1,11 +1,15 @@
 @use 'sass:color';
 
 $black: #000;
-$grey: color.adjust($black, $lightness: 75%);
+$grey: color.adjust($black, $lightness: 25%);
 $white: #fff;
+$fir: #006442;
+$gold: #f1d227;
 
 :export {
   black: $black;
   grey: $grey;
   white: $white;
+  fir: $fir;
+  gold: $gold;
 }

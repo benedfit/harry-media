@@ -1,0 +1,10 @@
+@use '~styles/functions';
+
+.inline {
+  display: inline-flex;
+  gap: functions.spacing(2);
+}
+
+.link {
+  text-underline-position: under;
+}
