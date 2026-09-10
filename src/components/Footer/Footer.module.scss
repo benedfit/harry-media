@@ -3,6 +3,7 @@
 
 .root {
   border-top: 1px solid var(--border);
+  font-size: medium;
 }
 
 .content {
@@ -18,7 +19,7 @@
 }
 
 .icon {
-  width: functions.spacing(4);
+  width: functions.spacing(3);
 }
 
 .iconLink {
