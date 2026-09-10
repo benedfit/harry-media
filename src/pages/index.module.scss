@@ -11,14 +11,14 @@
         flex-basis: 50%;
       }
     }
-
-    h1 {
-      position: unset;
-    }
   }
 
   h1 {
     position: absolute;
+
+    @include mixins.mq(breakpoints.$desktop) {
+      position: unset;
+    }
   }
 
   img {
