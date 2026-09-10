@@ -1,6 +1,6 @@
 {
   "links": [
-    { "href": "#top", "children": "Top" },
+    { "href": "#", "children": "Top" },
     { "href": "/", "children": "© 2026 Tristan Price. All rights reserved" }
   ]
 }
