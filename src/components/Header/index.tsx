@@ -28,7 +28,7 @@ const Header: FC = () => (
         <Grid.Item>
           <Navigation
             links={header.links}
-            theme={{ link: styles.link }}
+            theme={{ list: styles.links, link: styles.link }}
             inline
           />
         </Grid.Item>
