@@ -15,14 +15,13 @@
   padding-block: functions.spacing(3);
 }
 
-.logo {
-  width: auto;
-}
+.columns {
+  gap: functions.spacing(2);
+  justify-content: space-between;
 
-.links {
-  flex-grow: 1;
-  text-align: right;
-  width: auto;
+  & > * {
+    width: auto;
+  }
 }
 
 .link {

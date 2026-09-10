@@ -2,7 +2,8 @@
 
 .inline {
   display: inline-flex;
-  gap: functions.spacing(3);
+  gap: functions.spacing(1) functions.spacing(3);
+  flex-wrap: wrap;
 }
 
 .link {

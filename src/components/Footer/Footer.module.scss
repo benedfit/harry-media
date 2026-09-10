@@ -10,6 +10,15 @@
   padding-block: functions.spacing(3);
 }
 
+.columns {
+  gap: functions.spacing(1);
+  justify-content: space-between;
+
+  & > * {
+    width: auto;
+  }
+}
+
 .link {
   &:hover,
   &:active,
