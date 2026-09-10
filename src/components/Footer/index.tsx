@@ -23,11 +23,7 @@ const iconLinks = {
 
 const Footer: FC = () => (
   <FooterContainer theme={{ root: styles.root }}>
-    <ContentContainer
-      gutter
-      size="desktopLarge"
-      theme={{ content: styles.content }}
-    >
+    <ContentContainer gutter theme={{ content: styles.content }}>
       <Grid flex valign="middle" className={styles.columns}>
         <Grid.Item>
           <Navigation

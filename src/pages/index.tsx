@@ -1,4 +1,3 @@
-import { Image } from '@newhighsco/chipset'
 import type { NextPage } from 'next'
 import { LogoJsonLd, SocialProfileJsonLd } from 'next-seo'
 import React from 'react'
@@ -9,8 +8,6 @@ import Section from '~components/Section'
 import config from '~config'
 import homeSrc from '~images/home.jpg'
 import { canonicalUrl } from '~utils/url'
-
-import styles from './index.module.scss'
 
 const { name, title, logo, socialLinks, url } = config
 const meta = { canonical: canonicalUrl(), customTitle: true, title }
@@ -24,11 +21,10 @@ const HomePage: NextPage = () => (
       sameAs={Object.values(socialLinks)}
     />
     {logo?.bitmap && <LogoJsonLd url={url} logo={canonicalUrl(logo.bitmap)} />}
-    <Section className={styles.hero}>
+    <Section background={{ src: homeSrc, priority: true }}>
       <Heading headline>
         <small>Tristan</small> Price
       </Heading>
-      <Image src={homeSrc} priority />
     </Section>
     <Section id="career">
       <Heading as="h2">

@@ -5,10 +5,11 @@
 @use '~styles/fonts.module';
 
 :root {
+  --background: #{colors.$black};
+  --foreground: #{colors.$white};
   --primary: #{colors.$primary};
   --secondary: #{colors.$secondary};
   --border: #{colors.$grey};
-  --header-height: 105px;
 
   color-scheme: only dark;
   scroll-behavior: smooth;
@@ -16,8 +17,8 @@
 }
 
 body {
-  background-color: colors.$black;
-  color: colors.$white;
+  background-color: var(--background);
+  color: var(--foreground);
   font-size: 18px;
   line-height: 1.5;
   font-family: fonts.$body;
