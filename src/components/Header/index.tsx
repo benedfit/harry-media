@@ -13,7 +13,7 @@ import header from '~data/header.json'
 import styles from './Header.module.scss'
 
 const Header: FC = () => {
-  const [height, setHeight] = useState<number>(null)
+  const [height, setHeight] = useState(0)
   const headerRef = useRef(null)
 
   useEffect(() => {
@@ -33,12 +33,10 @@ const Header: FC = () => {
   }, [])
 
   useEffect(() => {
-    if (!!height) {
       document.documentElement.style.setProperty(
         `--header-height`,
         `${height}px`
       )
-    }
   }, [height])
 
   return (
