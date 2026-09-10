@@ -5,6 +5,10 @@
 @use '~styles/fonts.module';
 
 :root {
+  --primary: #{colors.$primary};
+  --secondary: #{colors.$secondary};
+  --border: #{colors.$grey};
+
   color-scheme: only dark;
   scroll-behavior: smooth;
 }

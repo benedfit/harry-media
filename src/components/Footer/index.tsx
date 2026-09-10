@@ -20,7 +20,7 @@ const iconLinks = {
 }
 
 const Footer: FC = () => (
-  <FooterContainer gutter theme={{ root: styles.root }}>
+  <FooterContainer theme={{ root: styles.root }}>
     <ContentContainer
       gutter
       size="desktopLarge"

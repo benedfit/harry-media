@@ -1,14 +1,16 @@
 @use '~styles/colors.module';
+@use '~styles/fonts.module';
 @use '~styles/functions';
 
 .root {
-  background: colors.$fir;
+  background: var(--primary);
+  font-family: fonts.$termina-bold;
   position: sticky;
   top: 0;
 }
 
 .content {
-  padding-block: functions.spacing(2);
+  padding-block: functions.spacing(3);
 }
 
 .logo {
@@ -28,6 +30,6 @@
   &:active,
   &.active,
   &:focus {
-    text-decoration: underline colors.$gold;
+    text-decoration: underline var(--secondary);
   }
 }

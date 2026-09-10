@@ -1,5 +1,6 @@
 @use '~styles/functions';
 
 .icon {
+  color: var(--secondary);
   width: functions.spacing(4);
 }
