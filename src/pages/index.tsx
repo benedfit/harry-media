@@ -21,7 +21,7 @@ const HomePage: NextPage = () => (
       sameAs={Object.values(socialLinks)}
     />
     {logo?.bitmap && <LogoJsonLd url={url} logo={canonicalUrl(logo.bitmap)} />}
-    <Section background={{ src: homeSrc, priority: true }}>
+    <Section background={{ src: homeSrc, priority: true, fetchPriority: 'high' }}>
       <Heading headline>
         <small>Tristan</small> Price
       </Heading>
