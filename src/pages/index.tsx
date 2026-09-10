@@ -1,4 +1,4 @@
-import { Grid, Image } from '@newhighsco/chipset'
+import { Image } from '@newhighsco/chipset'
 import type { NextPage } from 'next'
 import { LogoJsonLd, SocialProfileJsonLd } from 'next-seo'
 import React from 'react'
@@ -24,17 +24,11 @@ const HomePage: NextPage = () => (
       sameAs={Object.values(socialLinks)}
     />
     {logo?.bitmap && <LogoJsonLd url={url} logo={canonicalUrl(logo.bitmap)} />}
-    <Section>
-      <Grid flex gutterless reverse valign="middle" className={styles.grid}>
-        <Grid.Item sizes="one-half">
-          <Heading headline>
-            <small>Tristan</small> Price
-          </Heading>
-        </Grid.Item>
-        <Grid.Item sizes="one-half">
-          <Image src={homeSrc} priority />
-        </Grid.Item>
-      </Grid>
+    <Section className={styles.hero}>
+      <Heading headline>
+        <small>Tristan</small> Price
+      </Heading>
+      <Image src={homeSrc} priority />
     </Section>
     <Section id="career">
       <Heading as="h2">

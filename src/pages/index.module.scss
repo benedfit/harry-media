@@ -1,15 +1,30 @@
-.grid {
-  height: 100%;
-  width: 100%;
+@use '~styles/breakpoints.module';
+@use '~styles/mixins';
 
-  div:last-child {
-    height: 100%;
+.hero {
+  @include mixins.mq(breakpoints.$desktop) {
+    > * {
+      flex-direction: row-reverse;
+      justify-content: space-evenly;
 
-    > img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      object-position: 50% 10%;
+      > * {
+        flex-basis: 50%;
+      }
     }
+
+    h1 {
+      position: unset;
+    }
+  }
+
+  h1 {
+    position: absolute;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 30%;
   }
 }
