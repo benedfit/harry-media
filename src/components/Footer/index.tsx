@@ -15,7 +15,9 @@ import styles from './Footer.module.scss'
 
 const { name, socialLinks } = config
 const iconLinks = {
+  TikTok: { icon: 'simple-icons:tiktok' },
   Instagram: { icon: 'simple-icons:instagram' },
+  YouTube: { icon: 'simple-icons:youtube' },
   X: { icon: 'simple-icons:x' }
 }
 
