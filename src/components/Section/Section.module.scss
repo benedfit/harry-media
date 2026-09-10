@@ -1,0 +1,17 @@
+@use '~styles/functions';
+
+.root {
+  height: calc(100vh - var(--header-height));
+  overflow: hidden;
+
+  &:nth-child(even) {
+    background: var(--primary);
+  }
+}
+
+.content {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}

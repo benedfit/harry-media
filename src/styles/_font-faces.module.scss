@@ -6,8 +6,12 @@ $font-faces: (
     filename: 'termina/regular.woff2'
   ),
   fonts.$termina-bold: (
-    filename: 'termina/bold.woff2',
+    filename: 'termina/demi.woff2',
     font-weight: bold
+  ),
+  fonts.$termina-light: (
+    filename: 'termina/light.woff2',
+    font-weight: lighter
   )
 );
 

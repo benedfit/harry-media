@@ -4,9 +4,11 @@
 
 .root {
   background: var(--primary);
+  border-bottom: 1px solid var(--border);
   font-family: fonts.$termina-bold;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 .content {
