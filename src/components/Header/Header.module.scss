@@ -30,6 +30,6 @@
   &:active,
   &.active,
   &:focus {
-    text-decoration: underline var(--secondary);
+    text-decoration: functions.spacing(0.5) underline var(--secondary);
   }
 }
