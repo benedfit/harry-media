@@ -1,3 +1,7 @@
+// Font families
+$termina: 'Termina';
+$termina-bold: 'Termina-Bold';
+
 // Font stacks
 /* stylelint-disable value-keyword-case */
 $stack-system:
@@ -6,8 +10,8 @@ $stack-system:
 /* stylelint-enable value-keyword-case */
 
 // Font families
-$body: $stack-system;
-$heading: $stack-system;
+$body: $termina, $stack-system;
+$heading: $termina-bold, $stack-system;
 
 :export {
   body: $body;

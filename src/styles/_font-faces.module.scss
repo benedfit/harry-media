@@ -1,7 +1,15 @@
 @use '~@newhighsco/chipset/styles/mixins/font';
 @use '~styles/fonts.module';
 
-$font-faces: ();
+$font-faces: (
+  fonts.$termina: (
+    filename: 'termina/regular.woff2'
+  ),
+  fonts.$termina-bold: (
+    filename: 'termina/bold.woff2',
+    font-weight: bold
+  )
+);
 
 @include font.font-faces($font-faces);
 
