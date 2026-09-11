@@ -1,12 +1,12 @@
 @use '~styles/functions';
 
 .root {
-  background: var(--background-image, none) 50% 30% / cover no-repeat;
+  background: var(--background-image, none) 50% 30% / cover;
   height: calc(100vh - var(--header-height, 0px));
   overflow: hidden;
 
   &:nth-child(even) {
-    background: var(--primary);
+    background-color: var(--primary);
   }
 }
 

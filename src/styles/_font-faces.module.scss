@@ -2,9 +2,6 @@
 @use '~styles/fonts.module';
 
 $font-faces: (
-  fonts.$termina: (
-    filename: 'termina/regular.woff2'
-  ),
   fonts.$termina-bold: (
     filename: 'termina/demi.woff2',
     font-weight: bold
@@ -12,6 +9,9 @@ $font-faces: (
   fonts.$termina-light: (
     filename: 'termina/light.woff2',
     font-weight: lighter
+  ),
+  fonts.$termina: (
+    filename: 'termina/regular.woff2'
   )
 );
 
