@@ -1,5 +1,5 @@
 import { classNames, Icon } from '@newhighsco/chipset'
-import React, { type FC } from 'react'
+import { type FC } from 'react'
 
 import config from '~config'
 import { ReactComponent as LogoSvg } from '~images/logo.svg'

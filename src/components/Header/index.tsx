@@ -5,7 +5,7 @@ import {
   Navigation,
   SmartLink
 } from '@newhighsco/chipset'
-import React, { type FC, useEffect, useRef, useState } from 'react'
+import { type FC, useEffect, useRef } from 'react'
 
 import LogoLockup from '~components/LogoLockup'
 import header from '~data/header.json'
@@ -13,16 +13,18 @@ import header from '~data/header.json'
 import styles from './Header.module.scss'
 
 const Header: FC = () => {
-  const [height, setHeight] = useState(0)
   const headerRef = useRef(null)
 
   useEffect(() => {
     if (headerRef.current) {
-      const observer = new ResizeObserver(entries => {
-        for (const entry of entries) {
-          setHeight(entry.contentRect.height)
-        }
-      })
+      const observer = new ResizeObserver(entries =>
+        entries.forEach(({ contentRect }) =>
+          document.documentElement.style.setProperty(
+            `--header-height`,
+            `${contentRect.height}px`
+          )
+        )
+      )
 
       observer.observe(headerRef.current)
 
@@ -31,13 +33,6 @@ const Header: FC = () => {
       }
     }
   }, [])
-
-  useEffect(() => {
-      document.documentElement.style.setProperty(
-        `--header-height`,
-        `${height}px`
-      )
-  }, [height])
 
   return (
     <HeaderContainer ref={headerRef} theme={{ root: styles.root }}>

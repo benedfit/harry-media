@@ -1,6 +1,5 @@
 import type { NextPage } from 'next'
 import { LogoJsonLd, SocialProfileJsonLd } from 'next-seo'
-import React from 'react'
 
 import Heading from '~components/Heading'
 import PageContainer from '~components/PageContainer'
@@ -21,7 +20,9 @@ const HomePage: NextPage = () => (
       sameAs={Object.values(socialLinks)}
     />
     {logo?.bitmap && <LogoJsonLd url={url} logo={canonicalUrl(logo.bitmap)} />}
-    <Section background={{ src: homeSrc, priority: true, fetchPriority: 'high' }}>
+    <Section
+      background={{ src: homeSrc, priority: true, fetchPriority: 'high' }}
+    >
       <Heading headline>
         <small>Tristan</small> Price
       </Heading>

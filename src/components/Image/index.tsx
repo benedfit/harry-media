@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { getImageProps, type ImageProps as NextImageProps } from 'next/image'
-import React, { type FC } from 'react'
+import { type FC } from 'react'
 
 export type ImageProps = Partial<NextImageProps> & { srcSet?: string }
 
