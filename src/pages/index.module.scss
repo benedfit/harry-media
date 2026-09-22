@@ -1,0 +1,14 @@
+@use '~styles/functions';
+
+.hero {
+  height: calc(100vh - var(--header-height, 0px));
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: functions.spacing(4);
+  padding: functions.spacing(8) functions.spacing(4);
+  text-align: left;
+}

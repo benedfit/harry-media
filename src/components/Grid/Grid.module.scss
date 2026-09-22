@@ -1,3 +1,5 @@
 @use '~@newhighsco/chipset/styles/mixins/grid';
+@use '~styles/functions';
 @include grid.flex;
 @include grid.valign(middle);
+@include grid.widths('', 3);
