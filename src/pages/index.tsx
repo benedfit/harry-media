@@ -167,7 +167,7 @@ const HomePage: NextPage = () => (
               logo: true,
               children: (
                 <p>
-                  manages team and business travel for the Northampton Saints,
+                  Manages team and business travel for the Northampton Saints,
                   handling flights, hotels, and ground logistics for players and
                   staff. Manages domestic and European travel, training camps,
                   and corporate logistics for players, coaches, and staff.

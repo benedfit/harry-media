@@ -28,7 +28,7 @@ export const CarouselSlide: FC<Slide> = ({
           className={styles.content}
         >
           <Heading as="h3">
-            <small>{heading}</small>
+            <span>{heading}</span>
           </Heading>
           {children}
         </Grid.Item>

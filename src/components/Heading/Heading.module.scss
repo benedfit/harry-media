@@ -9,11 +9,14 @@
   line-height: 1.1;
   text-transform: uppercase;
 
-  small {
-    font-family: fonts.$termina-light;
+  > * {
     font-size: 0.4em;
     letter-spacing: 0.75em;
     text-indent: 0.75em;
+  }
+
+  small {
+    font-family: fonts.$termina-light;
   }
 }
 
