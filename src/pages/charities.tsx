@@ -19,6 +19,7 @@ const CharitiesPage: NextPage = () => (
             heading: 'Oddballs Foundation',
             image: oddballsFoundationLogo,
             logo: true,
+            priority: true,
             children: (
               <p>
                 Price has done quite allot of work for The Oddballs Foundation
@@ -33,6 +34,7 @@ const CharitiesPage: NextPage = () => (
           {
             heading: 'Rugby Against Cancer',
             image: fourSrc,
+            priority: true,
             children: (
               <p>
                 Price took part in The Sock Takeover, wearing custom bright

@@ -18,6 +18,7 @@ const CharitiesPage: NextPage = () => (
           {
             heading: 'Adidas',
             image: fiveSrc,
+            priority: true,
             children: (
               <p>
                 Unleash your ambition with The ‘Price” Line. Inspired by the
@@ -33,6 +34,7 @@ const CharitiesPage: NextPage = () => (
             heading: 'Destination Sport Travel',
             image: destinationSportTravelLogo,
             logo: true,
+            priority: true,
             children: (
               <p>
                 Manages team and business travel for the Northampton Saints,
