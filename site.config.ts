@@ -13,7 +13,7 @@ const config = {
   openGraphImage: openGraphImage.src,
   themeColor: colors.black,
   twitterHandle: 'TODO:',
-  socialLinks: { Instagram: '#', X: '#' }
+  socialLinks: { Instagram: '/', TikTok: '/', X: '/', YouTube: '/' }
 }
 
 export default config

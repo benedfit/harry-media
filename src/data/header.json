@@ -2,7 +2,7 @@
   "links": [
     { "href": "/", "children": "Home" },
     { "href": "/#career", "children": "Career" },
-    { "href": "/#charities", "children": "Charities" },
-    { "href": "/#partners", "children": "Partners" }
+    { "href": "/charities", "children": "Charities" },
+    { "href": "/partners", "children": "Partners" }
   ]
 }

@@ -10,6 +10,7 @@ type Slide = {
   heading: string
   image?: StaticImageData
   logo?: boolean
+  priority?: boolean
   children: ReactNode
 }
 type Props = { slides: Slide[]; scrolling?: boolean }
@@ -18,6 +19,7 @@ export const CarouselSlide: FC<Slide> = ({
   heading,
   image,
   logo,
+  priority,
   children
 }) => {
   return (
@@ -36,6 +38,7 @@ export const CarouselSlide: FC<Slide> = ({
           <Grid.Item sizes={['one-third']} className={styles.media}>
             <Image
               src={image}
+              priority={priority}
               className={classNames(styles.image, logo && styles.logo)}
             />
           </Grid.Item>
