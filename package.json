@@ -52,7 +52,7 @@
     "postcss": "8.5.31",
     "react": "19.3.1",
     "react-dom": "19.3.1",
-    "sass": "1.105.2"
+    "sass": "1.106.0"
   },
   "devDependencies": {
     "@commitlint/cli": "21.2.4",
